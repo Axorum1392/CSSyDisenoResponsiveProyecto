@@ -5,7 +5,16 @@ on:
   pull_request:
     branches: [ master ]
   workflow_dispatch:
-
+    inputs:
+      environment:
+        description: 'Select Env'
+        required: true
+        default: 'qa'
+        type: choice
+        options:
+          - stage
+          - qa
+          - production
 jobs:
   mi-tarea-de-prueba:
     runs-on: ubuntu-latest # El sistema operativo del robot
