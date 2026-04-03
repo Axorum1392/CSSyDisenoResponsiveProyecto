@@ -28,7 +28,7 @@ jobs:
 
       - name: Simular instalación
         run: |
-          echo "Instalando dependencias imaginarias..."
+          echo "Instalando dependencias imaginarias en ${{inputs.environment}}..."
           sleep 2
           echo "Todo listo."
 
