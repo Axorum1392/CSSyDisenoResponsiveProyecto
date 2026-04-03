@@ -1,9 +1,9 @@
 name: Mi Practica de CI
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   mi-tarea-de-prueba:
